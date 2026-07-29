@@ -1,4 +1,16 @@
 aid: jinkongauto
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/jinkongauto.png
 name: jinkongauto
 description: jinkongauto is a company surfaced as a portfolio company of qiming and added to the API Evangelist
   network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
@@ -11,7 +23,19 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+x-enrichment:
+  last_run: '2026-07-19'
+  result: no-api-surface
+  notes: >-
+    Enrichment probe found no API surface. Apex jinkongauto.com has NS records
+    (hichina.com / Aliyun) but no A record; www.jinkongauto.com (139.129.222.81)
+    serves HTTP only with a mismatched TLS cert. The site is a JPress CMS
+    corporate marketing site (Server: JFinal 4.9.23, template "jkWebsite")
+    currently returning a JPressEye license-domain error. No OpenAPI, docs,
+    developer portal, SDKs, or /.well-known documents (security.txt 404). No
+    vulnerability-disclosure or trust-center program detected. Nothing was
+    fabricated.
 tags:
 - Company
 apis: []
